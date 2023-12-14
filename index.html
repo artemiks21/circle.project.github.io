@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title> Обчислення площі круга </title>
+    <meta http-equiv="content-type"  content="text/html; charset=utf-8" />
+	<script language="Javascript">
+		function area1 (r)                                         {
+		    form1.output1.value=(r.value*r.value*Math.PI).toFixed(2); 
+            form1.output2.value=(r.value*2); 
+            form1.output3.value=(2*Math.PI*r.value).toFixed(2);  }
+	</script>
+  </head>
+  <body>
+    <p> Обчислення площі круга </p>
+	<form name="form1">
+	  <fieldset style="width: 40%">
+	    <legend> Введення даних </legend>
+    	 Радіус: <input type="text" size=7  name="radius">
+	  </fieldset>
+	  <fieldset style="width: 40%">
+		<legend> Обробка та виведення даних </legend>
+		Площа:  <input type="text" size=7 name="output1" readonly > <br>
+        <br>
+        Діаметр: <input type="text" size="7" name="output2" readonly> <br>
+        <br>
+        Довжина кола: <input type="text" size="7" name="output3" readonly> <br>
+   <input type="button" value="Обчислити" style="margin:10px"    onClick="area1(form1.radius)">
+	  </fieldset>
+	</form>
+  </body>
+</html>
